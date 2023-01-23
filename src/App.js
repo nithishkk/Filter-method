@@ -82,7 +82,7 @@ export default function App() {
       <p>Start editing to see some magic happen :)</p>
      <h1>Enter values</h1>
      <input type='text' onChange={(e)=>setSearch(e.target.value)}/>
-      {Data.filter(cityname=>cityname.name.toLowerCase().includes(search)).map((city)=>{
+      {Data?.filter(cityname=>cityname.name.toLowerCase().includes(search)).map((city)=>{
         return(
           <div>
 
